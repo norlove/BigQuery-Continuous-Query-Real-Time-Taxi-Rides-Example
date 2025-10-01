@@ -28,7 +28,6 @@ and
 CREATE OR REPLACE TABLE `real_time_taxi_streaming.ride_requests` (
   timestamp             TIMESTAMP NOT NULL,
   request_id            STRING,
-  request_status        STRING,
   latitude              FLOAT64,
   longitude             FLOAT64,
   destination_address   STRING
