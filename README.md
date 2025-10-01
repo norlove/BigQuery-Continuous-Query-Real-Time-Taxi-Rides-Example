@@ -10,6 +10,7 @@ CREATE OR REPLACE TABLE `real_time_taxi_streaming.taxirides` (
   ride_id           STRING,
   latitude          FLOAT64,
   longitude         FLOAT64,
+  geohash           STRING,
   ride_status       STRING,
   meter_reading     FLOAT64,
   passenger_count   INTEGER
@@ -17,7 +18,7 @@ CREATE OR REPLACE TABLE `real_time_taxi_streaming.taxirides` (
 PARTITION BY
   DATE(timestamp)
 CLUSTER BY
-  timestamp
+  geohash, timestamp
 OPTIONS (
   description = 'A real-time stream of taxi supply events, including location and ride status.'
 );
@@ -30,12 +31,13 @@ CREATE OR REPLACE TABLE `real_time_taxi_streaming.ride_requests` (
   request_id            STRING,
   latitude              FLOAT64,
   longitude             FLOAT64,
+  geohash               STRING,
   destination_address   STRING
 )
 PARTITION BY
   DATE(timestamp)
 CLUSTER BY
-  timestamp
+  geohash, timestamp
 OPTIONS (
   description = 'A real-time stream of passenger ride requests, representing market demand.'
 );
