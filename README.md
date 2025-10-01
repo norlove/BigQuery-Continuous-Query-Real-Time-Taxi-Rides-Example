@@ -6,6 +6,7 @@ Create the two tables:
 ```
 CREATE OR REPLACE TABLE `real_time_taxi_streaming.taxirides` (
   timestamp         TIMESTAMP NOT NULL,
+  taxi_id           STRING,
   ride_id           STRING,
   latitude          FLOAT64,
   longitude         FLOAT64,
