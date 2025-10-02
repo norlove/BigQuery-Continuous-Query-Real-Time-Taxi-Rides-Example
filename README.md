@@ -112,7 +112,6 @@ OPTIONS (
 5. Click to add a new Code block. Paste in the following Python code, being sure to change the project ID below from "your-gcp-project-id" to your own project. Then run the cell which will start streaming data into your taxirides and ride_requests tables. You can now proceed with running the stateful continuous queries.
 
 ```
-# -*- coding: utf-8 -*-
 """
 BigQuery Real-Time Taxi Data Generator
 
