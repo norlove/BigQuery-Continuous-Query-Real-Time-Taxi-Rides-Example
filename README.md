@@ -70,7 +70,7 @@ PARTITION BY ride_date
 CLUSTER BY
   taxi_id
 OPTIONS (
-  description = 'Stores the statistics for each driver in terms of their total rides, average fare, and total passengers per every 10 minutes.'
+  description = 'Stores the statistics for each driver in terms of their total rides, average fare, and total passengers per every 30 minutes.'
 );
 
 
