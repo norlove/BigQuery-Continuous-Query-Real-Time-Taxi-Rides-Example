@@ -59,12 +59,12 @@ OPTIONS (
 
 
 CREATE OR REPLACE TABLE `real_time_taxi_streaming.driver_stats` (
-  ride_date                   DATE NOT NULL,
-  window_end                  TIMESTAMP,
-  taxi_id                     STRING,
-  total_rides_per_hour        INT64,
-  avg_fare_per_hour           FLOAT64,
-  total_passengers_per_hour   INT64
+  ride_date                        DATE NOT NULL,
+  window_end                       TIMESTAMP,
+  taxi_id                          STRING,
+  total_rides_per_half_hour        INT64,
+  avg_fare_per_half_hour           FLOAT64,
+  total_passengers_per_half_hour   INT64
 )
 PARTITION BY ride_date
 CLUSTER BY
