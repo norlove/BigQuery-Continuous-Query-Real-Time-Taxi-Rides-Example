@@ -58,7 +58,7 @@ OPTIONS (
 );
 
 
-CREATE OR REPLACE TABLE `real_time_taxi_streaming.hourly_driver_stats` (
+CREATE OR REPLACE TABLE `real_time_taxi_streaming.driver_stats` (
   ride_date                   DATE NOT NULL,
   window_end                  TIMESTAMP,
   taxi_id                     STRING,
