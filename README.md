@@ -162,7 +162,7 @@ MAX_KM_FROM_CENTER = 15.0
 MIN_TRIP_DURATION_SECS = 60 * 2
 MAX_TRIP_DURATION_SECS = 60 * 15
 REPORTING_INTERVAL_SECONDS = 10
-GEOHASH_PRECISION = 6  # Precision for the geohash key (6 is ~0.6km x 0.6km)
+GEOHASH_PRECISION = 5  # Precision for the geohash key (5 is ~4.9km x 4.9km)
 NYC_STREET_NAMES = [
     "Broadway", "Park Ave", "Madison Ave", "Fifth Ave", "Lexington Ave",
     "Wall St", "Canal St", "Houston St", "Columbus Ave", "Amsterdam Ave",
